@@ -1,0 +1,48 @@
+# FIXED
+
+stop_go_bitband.obj: ../stop_go_bitband.c
+stop_go_bitband.obj: C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdint.h
+stop_go_bitband.obj: C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_ti_config.h
+stop_go_bitband.obj: C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/linkage.h
+stop_go_bitband.obj: C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_stdint40.h
+stop_go_bitband.obj: C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/stdint.h
+stop_go_bitband.obj: C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/cdefs.h
+stop_go_bitband.obj: C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_types.h
+stop_go_bitband.obj: C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_types.h
+stop_go_bitband.obj: C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_stdint.h
+stop_go_bitband.obj: C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h
+stop_go_bitband.obj: C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h
+stop_go_bitband.obj: ../clock.h
+stop_go_bitband.obj: ../wait.h
+stop_go_bitband.obj: ../tm4c123gh6pm.h
+
+../stop_go_bitband.c:
+
+C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdint.h:
+
+C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_ti_config.h:
+
+C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/linkage.h:
+
+C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_stdint40.h:
+
+C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/stdint.h:
+
+C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/cdefs.h:
+
+C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_types.h:
+
+C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_types.h:
+
+C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_stdint.h:
+
+C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h:
+
+C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h:
+
+../clock.h:
+
+../wait.h:
+
+../tm4c123gh6pm.h:
+

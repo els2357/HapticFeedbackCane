@@ -1,0 +1,198 @@
+******************************************************************************
+                  TI ARM Linker PC v20.2.7                     
+******************************************************************************
+>> Linked Thu Mar  9 09:17:21 2023
+
+OUTPUT FILE NAME:   <Lab5.out>
+ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 00000939
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00040000  00000aa1  0003f55f  R  X
+  SRAM                  20000000   00008000  00000200  00007e00  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00000aa1   00000aa1    r-x
+  00000000    00000000    0000026c   0000026c    r-- .intvecs
+  0000026c    0000026c    00000734   00000734    r-x .text
+  000009a0    000009a0    00000101   00000101    r-- .const
+20000000    20000000    00000200   00000000    rw-
+  20000000    20000000    00000200   00000000    rw- .stack
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    0000026c     
+                  00000000    0000026c     tm4c123gh6pm_startup_ccs.obj (.intvecs)
+
+.text      0    0000026c    00000734     
+                  0000026c    00000470     lab5_Ethan_Sprinkle.obj (.text)
+                  000006dc    00000164     uart0.obj (.text)
+                  00000840    0000007a     rtsv7M4_T_le_v4SPD16_eabi.lib : memset_t2.asm.obj (.text)
+                  000008ba    00000002     --HOLE-- [fill = 0]
+                  000008bc    0000004c                                   : atoi.c.obj (.text:atoi)
+                  00000908    0000002e                                   : strncat.c.obj (.text:strncat)
+                  00000936    00000002     --HOLE-- [fill = 0]
+                  00000938    0000002c                                   : boot_cortex_m.c.obj (.text:_c_int00_noinit_noargs:_c_int00_noinit_noargs)
+                  00000964    00000018                                   : strcmp.c.obj (.text:strcmp)
+                  0000097c    00000010     clock.obj (.text)
+                  0000098c    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
+                  00000998    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
+                  0000099c    00000004                                   : exit.c.obj (.text:abort:abort)
+
+.const     0    000009a0    00000101     
+                  000009a0    00000101     rtsv7M4_T_le_v4SPD16_eabi.lib : ctype.c.obj (.const:.string:_ctypes_)
+
+.cinit     0    00000000    00000000     UNINITIALIZED
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.stack     0    20000000    00000200     UNINITIALIZED
+                  20000000    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.stack)
+                  20000004    000001fc     --HOLE--
+
+__llvm_prf_cnts 
+*          0    20000000    00000000     UNINITIALIZED
+
+MODULE SUMMARY
+
+       Module                         code   ro data   rw data
+       ------                         ----   -------   -------
+    .\
+       lab5_Ethan_Sprinkle.obj        1136   0         0      
+       tm4c123gh6pm_startup_ccs.obj   12     620       0      
+       uart0.obj                      356    0         0      
+       clock.obj                      16     0         0      
+    +--+------------------------------+------+---------+---------+
+       Total:                         1520   620       0      
+                                                              
+    C:\ti\ccs1220\ccs\tools\compiler\ti-cgt-arm_20.2.7.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
+       ctype.c.obj                    0      257       0      
+       memset_t2.asm.obj              122    0         0      
+       atoi.c.obj                     76     0         0      
+       strncat.c.obj                  46     0         0      
+       boot_cortex_m.c.obj            44     0         0      
+       strcmp.c.obj                   24     0         0      
+       exit.c.obj                     4      0         0      
+       pre_init.c.obj                 4      0         0      
+    +--+------------------------------+------+---------+---------+
+       Total:                         320    257       0      
+                                                              
+       Stack:                         0      0         512    
+    +--+------------------------------+------+---------+---------+
+       Grand Total:                   1840   877       512    
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                   
+-------   ----                   
+0000099d  C$$EXIT                
+0000098d  ResetISR               
+20000200  __STACK_END            
+00000200  __STACK_SIZE           
+20000200  __STACK_TOP            
+ffffffff  __TI_pprof_out_hndl    
+ffffffff  __TI_prof_data_size    
+ffffffff  __TI_prof_data_start   
+00000000  __TI_static_base__     
+00000841  __aeabi_memclr         
+00000841  __aeabi_memclr4        
+00000841  __aeabi_memclr8        
+00000843  __aeabi_memset         
+00000843  __aeabi_memset4        
+00000843  __aeabi_memset8        
+ffffffff  __binit__              
+ffffffff  __c_args__             
+UNDEFED   __mpu_init             
+20000000  __stack                
+20000000  __start___llvm_prf_cnts
+20000000  __stop___llvm_prf_cnts 
+00000939  _c_int00_noinit_noargs 
+000009a0  _ctypes_               
+00000999  _system_pre_init       
+0000099d  abort                  
+000008bd  atoi                   
+ffffffff  binit                  
+00000000  g_pfnVectors           
+0000049b  getFieldInteger        
+00000427  getFieldString         
+000007dd  getcUart0              
+0000029f  getsUart0              
+0000026d  initHw                 
+0000097d  initSystemClockTo40Mhz 
+000006dd  initUart0              
+00000521  isCommand              
+000007f1  kbhitUart0             
+0000055b  main                   
+00000849  memset                 
+00000321  parseFields            
+00000795  putcUart0              
+000007b1  putsUart0              
+00000751  setUart0BaudRate       
+00000965  strcmp                 
+00000909  strncat                
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                   
+-------   ----                   
+00000000  __TI_static_base__     
+00000000  g_pfnVectors           
+00000200  __STACK_SIZE           
+0000026d  initHw                 
+0000029f  getsUart0              
+00000321  parseFields            
+00000427  getFieldString         
+0000049b  getFieldInteger        
+00000521  isCommand              
+0000055b  main                   
+000006dd  initUart0              
+00000751  setUart0BaudRate       
+00000795  putcUart0              
+000007b1  putsUart0              
+000007dd  getcUart0              
+000007f1  kbhitUart0             
+00000841  __aeabi_memclr         
+00000841  __aeabi_memclr4        
+00000841  __aeabi_memclr8        
+00000843  __aeabi_memset         
+00000843  __aeabi_memset4        
+00000843  __aeabi_memset8        
+00000849  memset                 
+000008bd  atoi                   
+00000909  strncat                
+00000939  _c_int00_noinit_noargs 
+00000965  strcmp                 
+0000097d  initSystemClockTo40Mhz 
+0000098d  ResetISR               
+00000999  _system_pre_init       
+0000099d  C$$EXIT                
+0000099d  abort                  
+000009a0  _ctypes_               
+20000000  __stack                
+20000000  __start___llvm_prf_cnts
+20000000  __stop___llvm_prf_cnts 
+20000200  __STACK_END            
+20000200  __STACK_TOP            
+ffffffff  __TI_pprof_out_hndl    
+ffffffff  __TI_prof_data_size    
+ffffffff  __TI_prof_data_start   
+ffffffff  __binit__              
+ffffffff  __c_args__             
+ffffffff  binit                  
+UNDEFED   __mpu_init             
+
+[45 symbols]
