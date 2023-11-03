@@ -1,8 +1,0 @@
-"./clock.obj"
-"./eeprom.obj"
-"./init.obj"
-"./lab8_Ethan_Sprinkle.obj"
-"./tm4c123gh6pm_startup_ccs.obj"
-"./uart0.obj"
-"../tm4c123gh6pm.cmd"
--llibc.a
